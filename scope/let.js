@@ -1,15 +1,6 @@
-var name = "global var";
-
-function home() {
-  var homebar = "homevar";
-  for (var i = 0; i < 100; i++) {
-    console.log(i);
-  }
-
-  if (true) {
-    let myif = "myif";
-  }
-  console.log(myif);
+var list = document.querySelectorAll("li");
+for (var i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", function () {
+    console.log(i + "번째 리스트");
+  });
 }
-
-home();
