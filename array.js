@@ -1,9 +1,11 @@
-function sum(a, b, c) {
-  return a + b + c;
+function addMark() {
+  let newArr = Array.from(arguments);
+
+  let newData = newArr.map(function (value) {
+    return value + "!";
+  });
+
+  console.log(newData);
 }
 
-let pre = [100, 200, 300];
-
-console.log(sum.apply(null, pre));
-
-console.log(sum(...pre));
+addMark(1, 2, 3, 4, 5);
