@@ -1,11 +1,10 @@
-function addMark() {
-  let newArr = Array.from(arguments);
-
-  let newData = newArr.map(function (value) {
-    return value + "!";
+function print() {
+  let list = document.querySelectorAll("li");
+  let listArr = Array.from(list);
+  let eArr = listArr.filter(function (v) {
+    return v.innerText.includes("e");
   });
-
-  console.log(newData);
+  return eArr;
 }
 
-addMark(1, 2, 3, 4, 5);
+console.log(print());
