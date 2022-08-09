@@ -1,9 +1,9 @@
-var colors = ["red", "white", "orange"];
-let [, second] = colors;
-let [, , third] = colors;
+const sora = {
+  name: "강소라",
+  age: 29,
+  gender: "female",
+};
 
-console.log(second);
-console.log(third);
+const { name: n, age: a, gender: g } = sora;
 
-let [first] = ["red", "white", "orange"];
-console.log(first);
+console.log(n, a, g);
