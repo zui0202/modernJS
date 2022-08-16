@@ -1,0 +1,7 @@
+function checkNum(...argArr) {
+  console.log(toString.call(argArr));
+  const result = argArr.every((v) => typeof v === "number");
+  console.log(result);
+}
+
+const result = checkNum(10, 2, 3, 4, false);

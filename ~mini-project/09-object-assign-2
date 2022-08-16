@@ -1,0 +1,9 @@
+const previousObj = {
+  name: "crong",
+  lastTime: "11:20",
+};
+
+const myHealth = Object.assign({}, previousObj, {});
+
+console.log(previousObj.name === myHealth.name);
+console.log(previousObj === myHealth);
